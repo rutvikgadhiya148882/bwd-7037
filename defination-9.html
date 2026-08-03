@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Page Navigation Example</title>
+  <style>
+    /* Enables smooth scrolling across the entire page */
+    html {
+      scroll-behavior: smooth;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* Fixed Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    section {
+      min-height: 100vh;
+      padding: 80px 20px 20px 20px; /* Top padding ensures fixed header doesn't cover content */
+      box-sizing: border-box;
+    }
+
+    #section1 { background-color: #f4f4f4; }
+    #section2 { background-color: #e2e2e2; }
+    #section3 { background-color: #d1d1d1; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#section1">Go to Section 1</a>
+    <a href="#section2">Go to Section 2</a>
+    <a href="#section3">Go to Section 3</a>
+  </nav>
+
+  <!-- Target Sections -->
+  <section id="section1">
+    <h2>Section 1</h2>
+    <p>This is the first section of the page.</p>
+    <a href="#section3">Jump directly to Section 3 ↓</a>
+  </section>
+
+  <section id="section2">
+    <h2>Section 2</h2>
+    <p>This is the second section of the page.</p>
+  </section>
+
+  <section id="section3">
+    <h2>Section 3</h2>
+    <p>This is the third section of the page.</p>
+    <a href="#section1">Back to Top ↑</a>
+  </section>
+
+</body>
+</html>
+</body>
+</html>

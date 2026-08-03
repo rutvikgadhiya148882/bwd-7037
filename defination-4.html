@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    You can implement this as a nested ordered list using HTML. Clicking a stream expands/collapses its subjects, and clicking a subject displays its details.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streams and Subjects</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    details {
+        margin-bottom: 10px;
+    }
+
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+        color: darkblue;
+    }
+
+    ol {
+        margin-top: 10px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    .subject {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #detailsBox {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        width: 400px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Streams and Subjects</h2>
+
+<ol>
+    <li>
+        <details>
+            <summary>Science</summary>
+            <ol>
+                <li><span class="subject" onclick="showDetails('Physics')">Physics</span></li>
+                <li><span class="subject" onclick="showDetails('Chemistry')">Chemistry</span></li>
+                <li><span class="subject" onclick="showDetails('Biology')">Biology</span></li>
+            </ol>
+        </details>
+    </li>
+
+    <li>
+        <details>
+            <summary>Commerce</summary>
+            <ol>
+                <li><span class="subject" onclick="showDetails('Accountancy')">Accountancy</span></li>
+                <li><span class="subject" onclick="showDetails('Economics')">Economics</span></li>
+                <li><span class="subject" onclick="showDetails('Business Studies')">Business Studies</span></li>
+            </ol>
+        </details>
+    </li>
+
+    <li>
+        <details>
+            <summary>Arts</summary>
+            <ol>
+                <li><span class="subject" onclick="showDetails('History')">History</span></li>
+                <li><span class="subject" onclick="showDetails('Geography')">Geography</span></li>
+                <li><span class="subject" onclick="showDetails('Political Science')">Political Science</span></li>
+            </ol>
+        </details>
+    </li>
+</ol>
+
+<div id="detailsBox">
+    <h3>Subject Details</h3>
+    <p>Select a subject to view its details.</p>
+</div>
+
+<script>
+function showDetails(subject) {
+    let details = "";
+
+    switch(subject) {
+        case "Physics":
+            details = "Physics deals with matter, energy, motion, force, and the laws of nature.";
+            break;
+        case "Chemistry":
+            details = "Chemistry is the study of substances, their properties, and chemical reactions."</html>
+</body>
+</html>
