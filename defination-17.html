@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Image Display</title>
+  <style>
+    /* 1. Page layout & background */
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f6f8;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* 2. Card container for the image */
+    .image-card {
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    /* 3. Image CSS Styling */
+    .styled-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* 4. Interactive hover effect */
+    .styled-image:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 5. Caption styling */
+    .image-caption {
+      margin-top: 12px;
+      color: #555555;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-card">
+    <img 
+      class="styled-image" 
+      src="https://picsum.photos/800/500" 
+      alt="Sample placeholder photo"
+    >
+    <p class="image-caption">Sample photo centered and styled with CSS.</p>
+  </div>
+
+</body>
+</html>
+</body>
+</html>
